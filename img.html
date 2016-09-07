@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  function makeFullScreen() {
+         var divObj = document.getElementById("niki");
+		 divObj.MozRequestFullScreen();
+}
+  function exitFullScreen() {
+         var divObj = document.getElementById("niki");
+		 divObj.MozCancelFullScreen();
+}
+</script>
+</head>
+
+<body>
+<center>
+<figure>
+<img id="niki" src="C:\Users\nikitabha\Desktop\abc.png" width="200" height="100" onClick="makeFullScreen()">
+</figure>
+
+<input type="button" value="FULLSCREEN" onClick="makeFullScreen(document.documentElement)"/>
+<input type="button" value="EXITSCREEN" onClick="exitFullScreen()"/>
+</center>
+
+</body>
+</html>
